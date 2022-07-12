@@ -151,6 +151,10 @@ h3 {
   color: #ffffff;
 }
 
+.texto-nosotros h2 {
+  margin-bottom: 3rem;
+}
+
 /* Listado de Productos */
 .contenido-principal {
   padding-top: 5rem;
