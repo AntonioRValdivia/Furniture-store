@@ -3,12 +3,14 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1 REM igual a 10 px */
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
   line-height: 2;
 }
@@ -30,8 +32,10 @@ img {
   border-radius: 1rem;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
   margin: 0 0 5rem 0;
 }
 
@@ -39,8 +43,8 @@ h1 {
   font-size: 4rem;
 }
 
-h2{
-   font-size: 3rem;
+h2 {
+  font-size: 3rem;
 }
 
 h3 {
@@ -54,20 +58,19 @@ h3 {
   text-transform: uppercase;
   font-weight: 900;
   padding: 1rem;
-  transition: background-color .3s ease-out;
+  transition: background-color 0.3s ease-out;
 }
 
 .btn:hover {
   background-color: #769c02;
 }
 
-
 /* Utilidades */
 .text-center {
   text-align: center;
 }
 
-
+/******************** Página Principal ********************/
 
 /* Header y Navegación */
 .nombre-sitio {
@@ -75,7 +78,7 @@ h3 {
   text-align: center;
 }
 
-.nombre-sitio span{
+.nombre-sitio span {
   color: #037bc0;
 }
 
@@ -91,9 +94,9 @@ h3 {
 
 .nav-principal a {
   font-weight: 700;
-} 
+}
 
-.hero{
+.hero {
   background-image: url(./../img/principal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,7 +108,7 @@ h3 {
 .categorias {
   padding-top: 5rem;
 }
-.categorias h2{
+.categorias h2 {
   text-align: center;
 }
 
@@ -132,8 +135,13 @@ h3 {
 
 /* Bloque nosotros */
 .sobre-nosotros {
-  background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0
-   100%), url(./../img/nosotros.jpg);
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #037bc0 50%,
+      #037bc0 100%
+    ),
+    url(./../img/nosotros.jpg);
   background-position: left center;
   padding: 5rem 0;
   background-repeat: no-repeat;
@@ -239,7 +247,7 @@ h3 {
 }
 
 .texto-producto p {
-  margin: 0 0 .5rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .texto-producto .precio {
@@ -271,4 +279,19 @@ h3 {
 .copyright {
   margin-top: 5rem;
   text-align: center;
+}
+
+/******************** Nosotros ****************/
+
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 4rem;
+}
+
+.informacion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
